@@ -17,7 +17,7 @@ class customFunctions {
     //put your code here
 
     public static function getDeviceStatus($deviceId) {
-        $conn = mysqli_connect("localhost", "root", "root", "scanindia");
+        $conn = mysqli_connect("localhost", "root", "22@nishant", "scanindia");
         $before10seconds = strtotime(date('Y-m-d H:i:s')) - (10);
         $sql = "SELECT * FROM scanindia.audit WHERE device_id = " . "'" . $deviceId . "'" . " AND CREATED BETWEEN date_sub(now(), interval 10 second) AND now() ORDER BY CREATED DESC LIMIT 1;";
         $result = $conn->query($sql);
@@ -30,7 +30,7 @@ class customFunctions {
     }
 
     public static function getDeviceData($deviceId) {
-        $conn = mysqli_connect("localhost", "root", "", "scanindia");
+        $conn = mysqli_connect("localhost", "root", "22@nishant", "scanindia");
         $before10seconds = strtotime(date('Y-m-d H:i:s')) - (10);
         $sql = "SELECT * FROM scanindia.audit WHERE device_id = " . "'" . $deviceId . "'" . " AND CREATED BETWEEN date_sub(now(), interval 5 second) AND now() ORDER BY CREATED DESC LIMIT 1;";
         $result = $conn->query($sql);

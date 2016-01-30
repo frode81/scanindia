@@ -1,6 +1,6 @@
 <?php require_once 'includes/header.php'; ?>
 <?php ini_set('display_errors','true'); ?>
-<?php $conn = mysqli_connect("localhost","root", "root", "scanindia"); ?>
+<?php $conn = mysqli_connect("localhost","root", "22@nishant", "scanindia"); ?>
 <?php
 if (isset($_POST['Register'])) {
     $sql = "INSERT INTO devices(device_number, address, city, state, latitude, longitude, country, is_active ) values(" . "'" . $_POST['deviceNumber'] . "'" . ","

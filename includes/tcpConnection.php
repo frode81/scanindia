@@ -2,9 +2,9 @@
 
 ini_set("display_erros", "true");
 include 'includes/SocketServer.class.php';
-$conn = mysqli_connect("localhost","root", "root", "scanindia");
+$conn = mysqli_connect("localhost","root", "22@nishant", "scanindia");
 ob_implicit_flush();
-define("HOST", "ec2-52-24-23-73.us-west-2.compute.amazonaws.com");
+define("HOST", "ec2-54-201-212-159.us-west-2.compute.amazonaws.com");
 define("PORT", "5000");
 define("MAX_CLIENTS", 100);
 

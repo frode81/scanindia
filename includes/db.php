@@ -1,7 +1,7 @@
 <?php
 define("HOST", "localhost");
 define("USERNAME", "root");
-define("PASSWORD", "");
+define("PASSWORD", "22@nishant");
 define("DB_NAME", "scanindia");
 
 // Create connection
