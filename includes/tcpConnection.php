@@ -5,7 +5,7 @@ include 'includes/SocketServer.class.php';
 $conn = mysqli_connect("localhost","root", "22@nishant", "scanindia");
 ob_implicit_flush();
 define("HOST", "52.89.229.139");
-define("PORT", "5000");
+define("PORT", "8000");
 define("MAX_CLIENTS", 100);
 
 function handle_connect($server, $client, $input) {
