@@ -9,7 +9,7 @@ ob_implicit_flush();
  */
 
 $host = "52.89.229.139";
-$port = 8000;
+$port = 2000;
 $data = '(8587042851AA13111514523726501.5000016032010)';
 
 if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === FALSE)

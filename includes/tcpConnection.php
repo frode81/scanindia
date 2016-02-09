@@ -4,8 +4,8 @@ ini_set("display_erros", "true");
 include 'includes/SocketServer.class.php';
 $conn = mysqli_connect("localhost","root", "22@nishant", "scanindia");
 ob_implicit_flush();
-define("HOST", "52.89.229.139");
-define("PORT", "8000");
+define("HOST", "ec2-52-89-229-139.us-west-2.compute.amazonaws.com");
+define("PORT", "2000");
 define("MAX_CLIENTS", 100);
 
 function handle_connect($server, $client, $input) {
