@@ -1,6 +1,6 @@
 <?php
 
-ini_set('max_execution_time', 100); //300 seconds = 5 minutes
+ini_set('max_execution_time', 0); //300 seconds = 5 minutes
 ob_implicit_flush();
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,7 +9,7 @@ ob_implicit_flush();
  */
 
 $host = "52.89.229.139";
-$port = 6000;
+$port = 5000;
 $data = '(8587042851AA13111514523726501.5000016032010)';
 
 if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === FALSE)
